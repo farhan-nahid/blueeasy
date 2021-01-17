@@ -1,0 +1,396 @@
+
+$text_color:#e6f0f4;
+$section_bg:#4bcaff;
+$nav_bg:#21252982;
+$footer_bg:#353f47;
+$section_padding:50px 0;
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Raleway', sans-serif;
+}
+header{
+	background-image: url('assets/img/header.jpg');
+
+
+	.header_top{
+		background: $nav_bg;
+		text-transform: uppercase;
+		
+		img{
+			margin-top: 10px;
+		}
+
+	
+
+		nav{
+			ul{
+				li{
+					
+					a{
+						margin-left: 10px;
+						color: $text_color;
+						font-size:10px;
+						font-weight:400;
+						text-transform: uppercase; 
+						border: 2px solid transparent;
+
+						&:hover{
+							border: 2px solid $section_bg;
+							color:$section_bg;
+							transition: 2s;
+						}
+					}
+
+
+				}
+			}
+		}
+
+	}
+}
+.header_slogan{
+	padding:200px 0px;
+
+	h2{
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 500;
+
+		span{
+			background: $nav_bg;
+		}
+	}
+	h2{
+		margin-top: 20px;
+		text-transform: uppercase;
+		text-align: center;
+
+		span{
+			background: $nav_bg;
+		}
+	}
+}
+
+/* header part end */
+
+#services{
+	background: $section_bg;
+	color: $text_color;
+	position: relative;
+	overflow: hidden;
+	padding: $section_padding;
+}
+.service_name h3{
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 50px;
+	font-weight: 500;
+	&:after{
+			position: absolute;
+			content:'';
+			width: 50px;
+			height: 2px;
+			background: $text_color;
+			left:0;
+			bottom:0;
+		}
+	
+	}
+.my_service h4{
+	text-transform: uppercase;
+	font-weight: 300;
+
+}
+.my_service p{
+	font-size: .8rem ;
+	text-transform: uppercase;
+}
+
+/* services part end */
+
+#portfolio{
+	background: #ffffff;
+	overflow: hidden;
+	padding: $section_padding;	
+		.portfolio_top h3{
+	text-transform: uppercase;
+	font-weight: 500;
+	position: relative;
+	margin-bottom: 50px;
+	&:after{
+		position: absolute;
+		content: '';
+		width: 50px;
+		height: 2px;
+		background: #010101;
+		left:0;
+		bottom: 0;
+	}
+}
+ .filter_menu{
+	ul{
+		li{
+			a{
+				text-transform: uppercase;
+				margin-left: 10px;
+				font-size: 10px;
+				transition: 2s;
+				border:1px solid transparent;
+				color:#010101;
+				font-weight: 400;
+				&:hover{
+					border:1px solid $section_bg;
+					color:$section_bg;
+				}
+			}
+		}
+	}
+}
+}
+.portfolio_content{
+	.portfolio_img{
+		height: 280px;
+		width: 270px;
+		text-align: center;
+		margin-top: 15px;
+			&:hover .portfolio_hover{
+				display: block;
+
+			}
+	}
+		.portfolio_bg1{
+			background-image: url('assets/img/bg1.png');
+		}
+		.portfolio_bg2{
+			background-image: url('assets/img/bg2.png');
+		}
+		.portfolio_bg3{
+			background-image: url('assets/img/bg3.png');
+		}
+		.portfolio_bg4{
+			background-image: url('assets/img/bg4.png');
+		}
+		.portfolio_bg5{
+			background-image: url('assets/img/bg5.png');
+			
+		}
+		.portfolio_bg6{
+			background-image: url('assets/img/bg6.png');
+			
+		}
+		.portfolio_bg7{
+			background-image: url('assets/img/bg7.png');
+			
+		}
+		.portfolio_bg8{
+			background-image: url('assets/img/bg8.png');
+			
+		}
+			.portfolio_hover{
+				display: none;
+				height: 100%;
+				width: 100%;
+				position: relative;
+				background: $nav_bg;
+				z-index: 1;
+					&:before{
+						width: 100%;
+						height: 100%;
+						content: '';
+						left: 0;
+						top: 0;
+						z-index: -1;
+					}
+					i{
+						color: #fff;
+						margin-top: 45%;
+
+					}
+			}
+}
+
+/* portfolio part end */
+
+.videos{
+	color:$text_color ;
+	background: $footer_bg;
+	padding: $section_padding;
+
+	h3{
+		text-transform: uppercase;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 20px;
+		font-weight: 500;
+			&:after{
+				position: absolute;
+				width: 50px;
+				height: 2px;
+				content: '';
+				bottom:  0;
+				left: 0 ;
+				background: $text_color;
+			}
+			p{
+				font-size: .8rem;
+			}
+			
+			
+	}
+}
+
+/* videos part end */
+.twitter{
+	color:$text_color ;
+	background: $section_bg;
+	padding: $section_padding;
+
+	h3{
+		position: relative;
+		text-transform: uppercase;
+		font-weight: 500;
+			margin-bottom: 30px;
+		&:after{
+			position: absolute;
+			width: 40px;
+			height: 2px;
+			content: '';
+			left: 0;
+			bottom: 0;
+			background: $text_color;
+		}
+
+	}
+}
+/* twitter part end */
+.jondou{
+	color:$text_color ;
+	background-image: url('assets/img/testimonial.jpg');
+	position: center;
+	background-size: cover;
+	padding: $section_padding;
+		h3{
+			text-transform: uppercase;
+			font-weight: 500;
+			position: relative;
+			margin-bottom: 30px;
+			&:after{
+				position: absolute;
+				width: 50px;
+				height: 2px;
+				background: $text_color;
+				left: 0;
+				bottom: 0;
+				content: '';
+
+			}
+		}
+		p{
+			font-size: .8rem;
+		}
+		.socal_icon{
+			p{
+				margin-top: 60px;
+			}
+			i{
+				font-size: 20px;
+				border: 2px solid $text_color;
+				padding: 10px 10px;
+				margin-right: 20px;
+				height: 40px;
+				width: 40px;
+				border-radius: 50%;
+				text-align: center;
+				&:hover{
+					background: $section_bg;
+					color: $footer_bg;
+					transition: 2s;
+				}
+			}
+		}
+}
+/* jonduo part end */
+.testimonial{
+		padding: $section_padding;
+		h3{
+			position: relative;
+			text-transform: uppercase;
+			font-weight: 500;
+			margin-bottom: 30px;
+				&:after{
+					position: absolute;
+					width: 50px;
+					height: 2px;
+					content: '';
+					background:  #010101;
+					bottom: 0;
+					left: 0;
+				}
+		}
+		p{
+			font-size: .8rem;
+		}
+		h6{
+			color: $section_bg;
+		}
+}
+/* testimonial part end */
+#contact{
+	background-image: url('assets/img/contact.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: $section_padding;
+	color: $text_color;
+
+		h3{
+			position: relative;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			font-weight: 500;
+
+				&:after{
+					position: absolute;
+					width: 50px;
+					height: 2px;
+					content: '';
+					background: $text_color;
+					bottom: 0;
+					left: 0;
+				}
+		}
+		label{
+			font-weight: 900;
+			text-transform: uppercase;
+			font-size: .8rem;
+		}
+			input{
+				background: transparent;
+			}
+			p{
+				font-size: .8rem;
+				margin-bottom: 20px;
+			}
+				h6{
+					margin-bottom: 5px;
+				}
+					textarea{
+						background: transparent;
+					}
+}
+/* contact us part end */
+footer{
+	background: $footer_bg;
+	color: $text_color;
+		a{
+			text-transform: uppercase;
+			color: $text_color;
+			font-size: .8rem;
+			margin-right: 5px;
+			border-right: 1px solid $text_color;
+			&:hover{
+				color: $text_color;
+			}
+		}
+}
+/* footer part end */
